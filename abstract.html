@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<a id="sparsedays18">
+<br>Title: OpenSPARSE: An Open Platform for Sparse Basic Linear Algebra Subprograms
+<br>Speaker: Weifeng Liu (Norwegian University of Science and Technology)
+<br>Time: September 27, 2018
+<br>Place: Sparse Days (Sparse Days '18). Toulouse, France.
+<br>Abstract: In the past decades, much research has been focusing on designing new data structures and efficient algorithms for sparse basic linear algebra subprograms (BLAS), such as sparse matrix-vecor multiplication, sparse matrix-matrix multiplication and sparse triagular solve. However, only very limited research results have been incorporated in widely-used sparse libraries, and further benefit real-world applications. This talk will present our recent ideas and effort to establish an open platform that can bridge the gap between sparse BLAS research and mathematical software development. 
+</a><br>
+
+<a id="csc18">
+<br>Title: Parallel Segmented Merge and Its Applications to Two Sparse Matrix Kernels
+<br>Speaker: Weifeng Liu (Norwegian University of Science and Technology)
+<br>Coauthors: Hao Wang (Department of Computer Science and Engineering, Ohio State University) and Brian Vinter (Niels Bohr Institute, University of Copenhagen)
+<br>Time: June, 2018
+<br>Place: 8th SIAM Workshop on Combinatorial Scientific Computing (CSC18). Bergen, Norway.
+<br>Abstract: Segmented operations, such as segmented sum, segmented scan and segmented sort, are important building blocks for parallel sparse matrix algorithms. We in this work propose a fast segmented merge kernel that in parallel merges $q$ sub-segments to $p$ segments, both of nonuniform lengths. We implement the segmented merge kernel on GPUs and demonstrate its efficiency on two key operations: sparse transposition and sparse matrix-matrix multiplication.
+</a><br>
+
+<a id="la18">
+<br>Title: Scalability Analysis of Sparse Triangular Solve
+<br>Speaker: Weifeng Liu (Norwegian University of Science and Technology)
+<br>Time: May, 2018
+<br>Place: SIAM Conference on Applied Linear Algebra (LA18). Hong Kong, China.
+<br>Abstract: Sparse triangular solve exists in a number of computational problems in scientific and engineering. Recently, the emergence of many-core processors has introduced more conflicts between algorithm efficiency and scalability. On one hand, many-core processors require a large amount of fine-grained tasks to saturate their resources, on the other, the irregular structure of sparse matrix brings difficulties to the task partitioning. This talk will discuss scalability of existing work on sparse triangular solve. Several key challenges in this area will be presented as well.
+</a><br>
+
+<a id="pp18">
+<br>Title: When Sparse Matrices Met Heterogeneous Processors: Opportunities and Challenges
+<br>Speaker: Weifeng Liu (Norwegian University of Science and Technology)
+<br>Time: March 10, 2018
+<br>Place: 18th SIAM Conference on Parallel Processing for Scientific Computing (PP18). Tokyo, Japan.
+<br>Abstract: In recent years, low-throughput GPUs have been integrated onto the same chip as the CPU. AMD APUs are representatives in this trend. The newest hardware progress, such as unified virtual address space, makes tightly coupled CPU-GPU heterogeneous processors a promising tool for scientific computing. This talk will focus on our empirical study of performance behaviors of sparse matrix algorithms (e.g., SpTRANS, SpMV, SpTRSV and SpGEMM) on emerging heterogeneous processors. A performance comparison with modern multi-core and many-core processors will be presented. Through an analysis on collected performance data, several opportunities and challenges will be discussed.
+</a><br>
+
+<a id="sparsedays17">
+<br>Title: Scalability Analysis of Sparse Matrix Computations on Many-core Processors
+<br>Speaker: Weifeng Liu (Norwegian University of Science and Technology)
+<br>Time: September 7, 2017
+<br>Place: Sparse Days (Sparse Days '17). Toulouse, France.
+<br>Abstract: Sparse matrices exist in a number of computational problems in scientific and engineering. Researchers have been always looking for faster parallel algorithms for sparse matrix in the last decades. Recently, the emergence of many-core processors has introduced more conflicts between algorithm efficiency and scalability. On one hand, many-core processors require a large amount of fine-grained tasks to saturate their resources, on the other, the irregular structure of sparse matrix brings difficulties to the task partitioning. This talk will discuss scalability of existing work and our newly designed data structures, such as the CSR5 format (ICS '15), and algorithms, such as sparse matrix transposition (ICS '16), sparse matrix-vector multiplication (ICS '15 and Parco), sparse triangular solve (Euro-Par '16) and sparse matrix-matrix multiplication (IPDPS '14 and JPDC). Several key challenges in this area will be presented as well.
+</a><br>
+
+<a id="pmaa16">
+<br>Title: An Empirical Study of Sparse BLAS on Emerging Heterogeneous Processors
+<br>Speaker: Weifeng Liu (University of Copenhagen)
+<br>Time: July 8, 2016
+<br>Place: The 9th International Workshop on Parallel Matrix Algorithms and Applications (PMAA '16). Bordeaux, France.
+<br>Abstract: In recent years, low-throughput GPUs have been integrated onto the same chip as the CPU. AMD APUs, Intel CPU-GPU SoCs and nVidia Tegra are representatives in this trend. The newest hardware progress, such as unified virtual address space and shared last level caches, makes tightly coupled CPU-GPU heterogeneous processors a promising tool for scientific computing. This talk will focus on our empirical study of performance behaviors of sparse BLAS routines (e.g., SpTRANS, SpMV, SpTRSV and SpGEMM) on emerging heterogeneous processors. A performance comparison with modern multi-core and many-core processors will also be presented.
+</a><br>
+
+<a id="pp16">
+<br>Title: Assessing Recent Sparse Matrix Storage Formats for Parallel Sparse Matrix-Vector Multiplication
+<br>Speaker: Weifeng Liu (University of Copenhagen)
+<br>Time: April 14, 2016
+<br>Place: SIAM Conference on Parallel Processing for Scientific Computing (PP16). Paris, France.
+<br>Abstract: The performance of parallel sparse matrix-vector multiplication (SpMV for short, calculating $y\gets Ax$, where $A$ is a sparse matrix, $x$ and $y$ are dense vectors) highly depends on the storage format of the input matrix. Recently, many formats have been proposed for many-core processors such as GPUs and Xeon Phi. This talk will give a comprehensive comparison for SpMV performance and format conversion cost (from the CSR to a new format) of recently developed formats including HYB (SC '09), Cocktail (ICS '12), ESB (ICS '13), BCCOO (PPoPP '14), BRC (ICS '14), ACSR (SC '14), CSR-Adaptive (SC'14, HiPC '15) and CSR5 (ICS '15). 
+</a><br>
+
+<a id="la15">
+<br>Title: A Framework for SpGEMM on GPUs and Heterogeneous Processors
+<br>Speaker: Weifeng Liu (University of Copenhagen)
+<br>Time: October 26, 2015
+<br>Place: SIAM Conference on Applied Linear Algebra (LA '15). Atlanta, Georgia, USA.
+<br>Abstract: This talk will focus on our framework and corresponding algorithms for solving three main challenges (unknown number of nonzeros of the resulting matrix, expensive insertion and load imbalance) of executing SpGEMM on GPUs and emerging heterogeneous processors. See http://arxiv.org/abs/1504.05022 for a preprint paper of this talk.
+</a><br>
+
+<a id="camseminar">
+<br>Title: Accelerating Sparse Basic Linear Algebra Subprograms on Many-Core Processors
+<br>Speaker: Weifeng Liu (University of Copenhagen)
+<br>Time: April 1, 2015
+<br>Place: Computational and Applied Mathematics Seminar (CAM Seminar). Mathematical Sciences - Chalmers University of Technology and University of Gothenburg, Gothenburg, Sweden.
+<br>Abstract: In the past decade many-core processors, such as GPUs and Xeon Phi, have been used increasingly in supercomputers. As a result, fully leveraging the potential of a large amount of processing units for mathematical software is a significant ongoing research topic. Unlike dense basic linear algebra subprograms (BLAS), sparse BLAS have to process matrices with unpredictable sparsity structures. This irregularity may lead to unscalable computation and thus poor performance on many-core processors. This talk will focus on our implementations of two most important non-trivial sparse BLAS: sparse matrix-vector multiplication (SpMV) and sparse matrix-matrix multiplication (SpGEMM). First, CSR5 (Compressed Sparse Row 5), a new sparse matrix storage format, is introduced for low-overhead format conversion and fast SpMV on various platforms including CPUs, GPUs and Xeon Phi. Second, a set of algorithms is developed for solving three main challenges (unknown number of nonzeros, expensive insertion and load imbalance) of executing SpGEMM on GPUs. The source code of the above work is downloadable at http://bhsparse.github.io/bhSPARSE/
+</a><br>
+
+<a id="pmaa14">
+<br>Title: An Efficient and General Method for CSR-Format Based SpMV on GPUs
+<br>Speaker: Weifeng Liu (University of Copenhagen)
+<br>Time: July 3, 2014
+<br>Place: The 8th International Workshop on Parallel Matrix Algorithms and Applications (PMAA '14). Lugano, Switzerland.
+<br>Abstract: Sparse matrix-vector multiplication (SpMV) is perhaps the most widely used non-trivial sparse BLAS routine in computational science and modeling. Compared to CPUs, modern graphics processing units (GPUs) promise much higher peak floating-point performance and memory bandwidth. Thus a lot of research has focused on GPU accelerated SpMV. However, most of them were concentrating on developing new sparse matrix formats (e.g. HYB, Cocktail and BBCOO) constantly challenging well-established scientific software and legacy codes. Further, improving performance of SpMV based on the most widely supported compressed sparse row (CSR) format was largely ignored on GPUs.
+<br>Our work described in this paper particularly focuses on accelerating the CSR-format based SpMV on GPUs. Our main contribution is proposing an efficient and general segmented reduction algorithm that directly supports possible empty rows in the input matrix. Note that the empty-row problem actually prevents the classical parallel segmented reduction method from being a general building-block of fast GPU SpMV. Previous work on CSR-format based GPU SpMV either made a strong assumption (i.e. the input matrix is empty-row free) or used pre and post global permutation operations for squeezing the possible empty rows out and inserting them back. Our method, in contrast, deals with the empty rows at runtime and eliminates the costly global permutation operations. Therefore the performance of the CSR-format based SpMV can be significantly improved for general input matrices.
+<br>Our algorithm includes 5 steps: (1) The CSR column index array and value array are evenly decomposed to `t' tiles. These tiles are assigned to `b' thread-bunches (i.e. warps or wavefronts). (2) Each GPU thread-bunch executes binary search of `t/b+1' tile boundaries on the CSR row pointer array and obtains corresponding row indices. (3) Each GPU thread-bunch runs `t/b' iterations in a loop to accomplish the following work: (3a) generating localized bit-flag array, (3b) marking tiles to dirty while one or more bit-flag conflicts are detected, (3c) calculating and saving candidate result entries, (3d) executing segmented reduction on them and transmitting the sum of the last segment to next iteration, (3e) storing the segmented sums to known locations in the result vector, and (f) writing the first and the last sum results of all inner iterations to a calibration array of size `2b' in the global memory. (4) The calibration array writes its values to the corresponding entries in the result vector. Then the result vector is numerically correct, except some values generated by these dirty tiles are not in their correct locations. (5) Finally, only for the dirty tiles, our method checks empty rows in the CSR row pointer array and scatter the saved compact results to their correct positions in the result vector. Then the SpMV operation is done.
+<br>To evaluate our method, we choose 9 representative unstructured matrices (boyd2, dc2, ASIC_680k, ins2, rajat21, c-73b, transient, wiki-Talk and FullChip) from the University of Florida Sparse Matrix Collection. Compared with state-of-the-art CSR-format based SpMV methods in the nVidia CUSP library (as well as the CUSPARSE library with similar execution pattern and performance) on an nVidia GeForce GTX 680 GPU, our method obtains 5.1x on average and up to 7.9x speedup. Additionally, our method is implemented in OpenCL thus diverse platforms are supported. Compared to our SpMV performance on the nVidia GPU, we achieve 5% on average and up to 83% extra speedup on an AMD Radeon HD 7970 GPU.
+</a><br>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+</body>
+</html>
+
